@@ -1,0 +1,118 @@
+body {
+    margin: 0; /* сброс отступов для всех элементов*/
+    background: linear-gradient(90deg, #b9deed, #efefef);
+    font-family:Arial, Helvetica, sans-serif; /* шрифт для всех элементов */
+}
+
+.header {
+    background-color: #0d0d0d; /* цвет фона */
+    opacity: 0.9; /* прозрачность фона */
+    height: 230px;
+    width: 1800px;
+    margin: 40px auto; /* центрирование по горизонтали */
+    border-radius: 15px; /* закругление углов */
+    box-shadow: 15px 15px 30px grey; /* тень блока*/
+}
+
+.navMenu {
+    text-align: right;
+    /* margin-right: 10px; */
+}
+
+.navMenu a {
+    font-style: italic;
+    color: grey;
+    font-size: 20px;
+    line-height: 100px; 
+    padding: 0 40px;
+    text-decoration: none;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bolder; /* толщина букв */
+    color: white;
+    text-align: center; /* центрирование текста */
+    padding: 20px 0 0 0;
+}
+
+.title span {
+    font-size: 50px;
+    color: rgb(190, 163, 7);
+}
+
+.logo {
+    position: absolute; /* позиция относительно родителя header*/
+    float: left; /* выравнивание по левому краю с обтеканием текста справа*/
+    margin: 40px 0 0 40px;
+}
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    height: 400px;
+}
+
+.fullname {
+    margin-right: 20px;
+    flex-basis: 70%;
+}
+
+.myImg {
+    flex-basis: 30%;
+}
+.myImg img { /* выравнивание изображения в блоке по уентру */
+    display: block;
+    margin: 0 auto; 
+  }
+
+.knowledge {
+    display: flex;   
+    justify-content: center;
+}
+
+.article {
+    margin-top: 2em;   
+}
+
+
+.myskills, p {
+    font-size: 1.7rem;
+    padding-left: 20px;
+}
+
+.text {
+    font-size: 1rem;
+    color: #585858;
+}
+
+h2 {
+    text-align: center;
+    color: #424242;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.signature {
+   padding-top: 30px;
+        text-align: center;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #0d0d0d; /* цвет фона */
+    opacity: 0.9; /* прозрачность фона */
+    height: 50px;
+    width: 1800px;
+    margin: 40px auto; /* центрирование по горизонтали */
+    border-radius: 15px; /* закругление углов */
+    box-shadow: 15px 15px 30px grey; /* тень блока*/
+}
