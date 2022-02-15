@@ -1,50 +1,56 @@
 body {
-    margin: 0; /* сброс отступов для всех элементов*/
+    margin: 0; 
     background: linear-gradient(90deg, #b9deed, #efefef);
-    font-family:Arial, Helvetica, sans-serif; /* шрифт для всех элементов */
+    font-family:Arial, Helvetica, sans-serif; 
 }
 
 .header {
-    background-color: #0d0d0d; /* цвет фона */
-    opacity: 0.9; /* прозрачность фона */
-    height: 230px;
-    width: 1800px;
-    margin: 40px auto; /* центрирование по горизонтали */
-    border-radius: 15px; /* закругление углов */
-    box-shadow: 15px 15px 30px grey; /* тень блока*/
+    background-color: #0d0d0d; 
+    opacity: 0.9;
+    width: 95vw;
+    margin: 40px auto; 
+    border-radius: 15px; 
+    box-shadow: 15px 15px 30px grey; 
+}
+
+.mainblock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin: 30px 0 0 30px;
+}
+
+.title {
+    margin-left: -40px;
+    flex-grow: 1;
+    font-size: 60px;
+    font-weight: bolder; 
+    color: white;
+    text-align: center; 
+    padding: 20px 0 0 0;
+    text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
+}
+
+.title span {
+    font-size: 50px;
+    color: yellow;
+    text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
 }
 
 .navMenu {
     text-align: right;
-    /* margin-right: 10px; */
+    padding: 30px 0 10px;
 }
 
 .navMenu a {
     font-style: italic;
     color: grey;
     font-size: 20px;
-    line-height: 100px; 
     padding: 0 40px;
     text-decoration: none;
-}
-
-.title {
-    font-size: 60px;
-    font-weight: bolder; /* толщина букв */
-    color: white;
-    text-align: center; /* центрирование текста */
-    padding: 20px 0 0 0;
-}
-
-.title span {
-    font-size: 50px;
-    color: rgb(190, 163, 7);
-}
-
-.logo {
-    position: absolute; /* позиция относительно родителя header*/
-    float: left; /* выравнивание по левому краю с обтеканием текста справа*/
-    margin: 40px 0 0 40px;
 }
 
 .about_me {
@@ -59,15 +65,16 @@ body {
     height: 400px;
 }
 
-.fullname {
-    margin-right: 20px;
+.fullname, .myskills {
     flex-basis: 70%;
+    font-size: 1.7rem;
 }
 
-.myImg {
+.myImg, .emptyBlock {
     flex-basis: 30%;
 }
-.myImg img { /* выравнивание изображения в блоке по уентру */
+
+.myImg img { 
     display: block;
     margin: 0 auto; 
   }
@@ -81,38 +88,30 @@ body {
     margin-top: 2em;   
 }
 
-
-.myskills, p {
-    font-size: 1.7rem;
-    padding-left: 20px;
-}
-
 .text {
     font-size: 1rem;
     color: #585858;
 }
 
-h2 {
-    text-align: center;
-    color: #424242;
+p {
+    font-weight: bold;
 }
 
 h1 {
     text-align: center;
-    font-size: 3rem;
-}
-
+    font-size: 4rem;
+    }
 
 .signature {
-   padding-top: 30px;
-        text-align: center;
+    padding-top: 30px;
+    text-align: center;
     color: gray;
     font-family: 'Times New Roman', Times, serif;
-    background-color: #0d0d0d; /* цвет фона */
-    opacity: 0.9; /* прозрачность фона */
+    background-color: #0d0d0d; 
+    opacity: 0.9; 
     height: 50px;
-    width: 1800px;
-    margin: 40px auto; /* центрирование по горизонтали */
-    border-radius: 15px; /* закругление углов */
-    box-shadow: 15px 15px 30px grey; /* тень блока*/
+    width: 95vw;
+    margin: 40px auto; 
+    border-radius: 15px; 
+    box-shadow: 15px 15px 30px grey; 
 }

@@ -12,7 +12,9 @@
 
         <header>
             <div class="header">
-                <?php include 'logo.inc.php' ?>   
+                <div class="mainblock">
+                    <?php include 'logo.inc.php' ?>
+                </div>
                 <?php include 'menu.inc.php' ?>
             </div>
         </header>
@@ -30,26 +32,26 @@
       
                     <div class="fullname">
                         <p> Меня зовут 
-                            <?php echo "$name $surname <br>"?>
+                            <?php echo "$name $surname. <br>" ?>
                         </p> 
-                        <p>О себе:<br> 
-                            <?=$about?>                                      
-                        </p>                
+                        <p>О себе:</p>
+                            <ul>
+                                <li>дата рождения - <?=$birthday?>;</li>
+                                <li>место рождения - <?=$birthplace?>;</li>
+                                <li>место проживания - <?=$address?>;</li>
+                                <li>дети - <?=$children?>;</li>
+                                <li>образование - <?=$education?>;</li>
+                                <li>место работы и должность - <?=$employment?>;</li>
+                                <li>увлечения - <?=$hobby?>.</li>
+                            </ul>                                     
                     </div>
                 
                 </div>
       
                 <div class="knowledge">
+                    <div class="emptyBlock"></div>
                     <?php include 'knowledge.inc.php'; ?>
                 </div>
-      
-                <!-- <div class="article">
-                    <p class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Recusandae asperiores ducimus dolore explicabo. Animi est amet quibusdam molestias! 
-                        Minus laudantium sapiente dignissimos possimus natus cumque delectus sed, accusantium totam quia?
-                    </p>
-                </div> -->
             </div>
         </main>
 
